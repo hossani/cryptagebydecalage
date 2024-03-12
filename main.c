@@ -36,12 +36,19 @@ char* dec_cry(char *chaine)
 int main()
 {
     char user_str_input[100];
-
-    printf("Enter your Text that you want to crypt : ");
+  char question;
+    printf("Click sur c pour cyrptage sinon sur d pour decryptage:\t");
+    scanf(" %c",&question);
+    printf("\nEnter your Text that you want to crypt : ");
     scanf("%s", user_str_input);
+  if(question='c'){
+    cry(user_str_input);
+    printf("%s", user_str_input);
+  }
+  if(question='d'){
     dec_cry(user_str_input);
     printf("%s", user_str_input);
-
+  }
 
     return 0;
 }
