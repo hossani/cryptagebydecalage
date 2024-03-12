@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 char* cry(char *chaine)
 {
     char* ptr = chaine;
